@@ -11,6 +11,7 @@ int main () {
 	data_t LHS[8][8],RHS[8];
 
    //initialise matrix of coefficients (LHS) and vector of coefficients (RHS) some non-trivial values for thorough testing
+   //due to the future use in GRChombo_EsGB and GRFolres codes, we want to consider the case of an 8x8 matrix with all zeros in the last column, except for the last entry (i,j)=(7,7)
 	for (int i=0; i<N; i++){
       RHS[i]=i+1;
       printf("RHS[%d]=%lf\n",i,RHS[i]);
